@@ -1,0 +1,121 @@
+/* @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap"); */
+
+@font-face {
+  font-family: "coffee+tea-Medium";
+  src: url(coffee+tea-Medium.woff);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "coffee+tea-Medium";
+  margin: 0px;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background-color: #030027;
+  height: 15vh;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  background-color: lightblue;
+  height: 100%;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+
+.date-section {
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+}
+
+input {
+  padding: 0.3rem;
+  font-size: 1.6rem;
+  font-family: "coffee+tea-Medium";
+  width: 7rem;
+  color: grey;
+}
+
+input:focus {
+  border: 0.15rem solid #1063ff;
+  outline: none;
+}
+
+select {
+  padding: 0.3rem;
+  font-size: 1.6rem;
+  font-family: "coffee+tea-Medium";
+  color: grey;
+}
+select:focus {
+  outline: none;
+  border: 0.15rem solid #1063ff;
+}
+
+.button-section {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  padding: 0.8rem;
+  background-color: #2f004f;
+  border-radius: 1rem;
+  color: #fff;
+  font-family: "coffee+tea-Medium";
+  font-size: 1.4rem;
+  transition: transform ease 0.2s;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+  transform: scale(0.9);
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.result-section {
+  font-family: "coffee+tea-Medium", sans-serif;
+  color: black;
+  padding-top: 2rem;
+  font-size: 3rem;
+  opacity: 0;
+}
+
+.result-section.show {
+  opacity: 1;
+}
